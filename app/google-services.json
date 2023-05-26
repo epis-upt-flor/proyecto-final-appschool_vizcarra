@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "187689965118",
+    "project_id": "controladministrativo-570c8",
+    "storage_bucket": "controladministrativo-570c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187689965118:android:ceec853b6607ff0028a36f",
+        "android_client_info": {
+          "package_name": "com.example.controladministrativo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187689965118-umva22ruhcisgs6tffeg2qa4snq7mfjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo_PELebLn3tfaq3d_qV7lcmVo2Z1Nn9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187689965118-umva22ruhcisgs6tffeg2qa4snq7mfjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
