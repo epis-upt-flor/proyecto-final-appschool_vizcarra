@@ -212,6 +212,7 @@
                     >
 
                     <LinearLayout
+                        android:id="@+id/vistaCursos"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -240,7 +241,6 @@
             </GridLayout>
 
             <RelativeLayout
-                android:id="@+id/vistaCursos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="40dp"
