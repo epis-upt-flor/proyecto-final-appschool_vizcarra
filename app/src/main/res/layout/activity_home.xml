@@ -65,6 +65,7 @@
                     app:cardCornerRadius="10dp"
                     >
                     <LinearLayout
+                        android:id="@+id/vistaPersonal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -102,6 +103,7 @@
                     app:cardCornerRadius="10dp"
                     >
                     <LinearLayout
+                        android:id="@+id/vistaDocentes"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -138,6 +140,7 @@
                     >
 
                     <LinearLayout
+                        android:id="@+id/vistaAlumnos"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -174,6 +177,7 @@
                     >
 
                     <LinearLayout
+                        android:id="@+id/vistaHorarios"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -226,7 +230,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Aulas"
+                            android:text="Cursos"
                             android:textSize="15sp"
                             android:layout_gravity="center_horizontal"
                             android:textStyle="bold"
@@ -236,6 +240,7 @@
             </GridLayout>
 
             <RelativeLayout
+                android:id="@+id/vistaCursos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="40dp"
@@ -259,8 +264,6 @@
                     android:text="Cerrar Sesión" />
 
             </RelativeLayout>
-
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout >
