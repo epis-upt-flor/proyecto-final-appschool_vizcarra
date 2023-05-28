@@ -43,7 +43,7 @@
                     />
 
                 <EditText
-                    android:id="@+id/editTextDNI"
+                    android:id="@+id/editTextDNIDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -62,7 +62,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/RegistroDocente" />
 
                 <EditText
-                    android:id="@+id/editTextCorreo_Docente"
+                    android:id="@+id/editTextCorreoDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -78,10 +78,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextDNI" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDNIDocente" />
 
                 <EditText
-                    android:id="@+id/editTextNombre"
+                    android:id="@+id/editTextNombreDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -97,10 +97,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextCorreo_Docente" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCorreoDocente" />
 
                 <EditText
-                    android:id="@+id/editTextApellido"
+                    android:id="@+id/editTextApellidoDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -116,10 +116,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNombreDocente" />
 
                 <EditText
-                    android:id="@+id/editTextDireccion"
+                    android:id="@+id/editTextDireccionDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -135,11 +135,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextApellido" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextApellidoDocente" />
 
 
                 <EditText
-                    android:id="@+id/editTextCelular"
+                    android:id="@+id/editTextCelularDocente"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="30dp"
@@ -155,51 +155,43 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextDireccion" />
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDireccionDocente" />
 
                 <RadioGroup
-                    android:id="@+id/rboGrupo"
+                    android:id="@+id/rboGrupoDocente"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextCelular"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextCelularDocente"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     >
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <RadioButton
+                        android:id="@+id/rboMasculinoDocente"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        >
+                        app:buttonTint="@color/app_theme"
+                        android:text="Masculino" />
 
-                        <RadioButton
-                            android:id="@+id/rboMasculino"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            app:buttonTint="@color/app_theme"
-                            android:text="Masculino" />
-
-                        <RadioButton
-                            android:id="@+id/rboFemenino"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            app:buttonTint="@color/app_theme"
-                            android:text="Femenino" />
-                    </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/rboFemeninoDocente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonTint="@color/app_theme"
+                        android:text="Femenino" />
                 </RadioGroup>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginTop="30dp"
-                    app:layout_constraintTop_toBottomOf="@+id/rboGrupo"
+                    app:layout_constraintTop_toBottomOf="@+id/rboGrupoDocente"
                     >
 
                     <Button
-                        android:id="@+id/loginButton"
+                        android:id="@+id/guardarDocenteButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/app_theme"

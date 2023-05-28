@@ -10,6 +10,7 @@ import com.example.controladministrativo.R
 import com.example.controladministrativo.Views.Alumnos.AlumnoActivity
 import com.example.controladministrativo.Views.Cursos.CursoActivity
 import com.example.controladministrativo.Views.Docentes.DocenteActivity
+import com.example.controladministrativo.Views.Grado.GradoActivity
 import com.example.controladministrativo.Views.Personal.PersonalActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -72,6 +73,11 @@ class HomeActivity : AppCompatActivity() {
         vistaCurso.setOnClickListener {
             navigateToActivityCurso()
         }
+
+        val vistaGrado = findViewById<LinearLayout>(R.id.vistaGrados)
+        vistaGrado.setOnClickListener {
+            navigateToActivityGrado()
+        }
     }
 
     //Vista Personal
@@ -96,6 +102,12 @@ class HomeActivity : AppCompatActivity() {
     //Vista Curso
     private fun navigateToActivityCurso() {
         val intent = Intent(this@HomeActivity, CursoActivity::class.java)
+        startActivity(intent)
+    }
+
+    //Vista Curso
+    private fun navigateToActivityGrado() {
+        val intent = Intent(this@HomeActivity, GradoActivity::class.java)
         startActivity(intent)
     }
 }

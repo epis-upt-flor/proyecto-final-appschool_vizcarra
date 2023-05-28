@@ -6,7 +6,7 @@ import com.example.controladministrativo.Models.DocenteModel
 class DocenteController {
     private val docenteModel = DocenteModel()
 
-    fun agregarAlumno(docente: Docente, callback: (Boolean) -> Unit) {
+    fun agregarDocente(docente: Docente, callback: (Boolean) -> Unit) {
         docenteModel.addDocente(docente, callback)
     }
 }

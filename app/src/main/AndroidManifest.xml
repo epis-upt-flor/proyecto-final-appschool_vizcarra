@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ControlAdministrativo"
         tools:targetApi="31">
         <activity
+            android:name=".Views.Grado.ListGradoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Grado.GradoActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.Cursos.ListCursoActivity"
             android:exported="false" />
         <activity

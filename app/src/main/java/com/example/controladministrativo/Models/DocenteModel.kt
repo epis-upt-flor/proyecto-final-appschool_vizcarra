@@ -10,15 +10,15 @@ data class Docente(
     val apellidos: String,
     val direccion: String,
     val celular: String,
-    val sexo: String
+    var sexo: String
 )
 
 class DocenteModel {
     private val firebaseDatabase: FirebaseDatabase = FirebaseDatabase.getInstance()
-    private val cursosReference: DatabaseReference = firebaseDatabase.reference.child("Docente")
+    private val docentesReference: DatabaseReference = firebaseDatabase.reference.child("Docente")
 
     fun addDocente(docente: Docente, callback: (Boolean) -> Unit) {
-        val newDocenteReference = cursosReference.push()
+        val newDocenteReference = docentesReference.push()
         newDocenteReference.setValue(docente)
             .addOnSuccessListener {
                 callback(true)
