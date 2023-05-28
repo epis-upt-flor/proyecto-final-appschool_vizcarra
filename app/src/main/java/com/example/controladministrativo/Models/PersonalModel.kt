@@ -11,7 +11,7 @@ data class Personal(
     val direccion: String,
     val celular: String,
     val rol: String,
-    val sexo: String
+    var sexo: String
 )
 class PersonalModel {
     private val firebaseDatabase: FirebaseDatabase = FirebaseDatabase.getInstance()

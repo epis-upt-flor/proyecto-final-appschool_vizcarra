@@ -24,6 +24,7 @@ class CursoActivity : AppCompatActivity() {
         GuardarCurso()
     }
 
+    //Carga los datos para el Spinner (ComboBox)
     private fun setupGrados() {
         val datosSpinner = listOf("Primero", "Segundo", "Tercero", "Cuarto", "Quinto")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, datosSpinner)
