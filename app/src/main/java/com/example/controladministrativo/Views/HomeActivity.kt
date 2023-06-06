@@ -8,9 +8,14 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.controladministrativo.R
 import com.example.controladministrativo.Views.Alumnos.AlumnoActivity
+import com.example.controladministrativo.Views.Alumnos.ListAlumnoActivity
 import com.example.controladministrativo.Views.Cursos.CursoActivity
+import com.example.controladministrativo.Views.Cursos.ListCursoActivity
 import com.example.controladministrativo.Views.Docentes.DocenteActivity
+import com.example.controladministrativo.Views.Docentes.ListDocenteActivity
 import com.example.controladministrativo.Views.Grado.GradoActivity
+import com.example.controladministrativo.Views.Grado.ListGradoActivity
+import com.example.controladministrativo.Views.Personal.ListPersonalActivity
 import com.example.controladministrativo.Views.Personal.PersonalActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -82,32 +87,32 @@ class HomeActivity : AppCompatActivity() {
 
     //Vista Personal
     private fun navigateToActivityPersonal() {
-        val intent = Intent(this@HomeActivity, PersonalActivity::class.java)
+        val intent = Intent(this@HomeActivity, ListPersonalActivity::class.java)
         startActivity(intent)
     }
 
     //Vista Alumno
     private fun navigateToActivityAlumno() {
-        val intent = Intent(this@HomeActivity, AlumnoActivity::class.java)
+        val intent = Intent(this@HomeActivity, ListAlumnoActivity::class.java)
         startActivity(intent)
     }
 
 
     //Vista Docente
     private fun navigateToActivityDocente() {
-        val intent = Intent(this@HomeActivity, DocenteActivity::class.java)
+        val intent = Intent(this@HomeActivity, ListDocenteActivity::class.java)
         startActivity(intent)
     }
 
     //Vista Curso
     private fun navigateToActivityCurso() {
-        val intent = Intent(this@HomeActivity, CursoActivity::class.java)
+        val intent = Intent(this@HomeActivity, ListCursoActivity::class.java)
         startActivity(intent)
     }
 
     //Vista Curso
     private fun navigateToActivityGrado() {
-        val intent = Intent(this@HomeActivity, GradoActivity::class.java)
+        val intent = Intent(this@HomeActivity, ListGradoActivity::class.java)
         startActivity(intent)
     }
 }
